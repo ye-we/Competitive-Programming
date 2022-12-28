@@ -9,9 +9,9 @@ var rearrangeArray = function(nums) {
     if(nums.length === 1){
         result.push(nums[0])
         break;
-      }
-      result.push(Math.min(...nums))
-      result.push(Math.max(...nums))
+      } 
+      result.push(nums[0])
+      result.push(nums[nums.length-1])
       nums.shift();
       nums.pop();
     }
