@@ -1,5 +1,5 @@
-function isPowerOfThree(n) {
+var isPowerOfFour = function(n) {
   if (n === 1) return true;
-  if (n % 3 !== 0 || n === 0) return false;
-  return isPowerOfThree(n / 3);
+  if (n % 4 !== 0 || n === 0) return false;
+  return isPowerOfFour(n / 4);
 }
